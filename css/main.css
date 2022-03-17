@@ -163,6 +163,10 @@ nav a {
   text-decoration: none;
 }
 
+nav a.current {
+  border-bottom: 2px solid #fff;
+}
+
 nav a:hover {
   border-bottom: 2px solid #fff;
 }

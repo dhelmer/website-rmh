@@ -45,6 +45,10 @@ nav {
     color: #fff;
     text-decoration: none;
 
+    &.current {
+      border-bottom: 2px solid #fff;
+    }
+
     &:hover {
       border-bottom: 2px solid #fff;
     }
