@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/icons/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/icons/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/icons/favicon-16x16.png"
+/>
+<link rel="manifest" href="/assets/icons/manifest.json" />
+<link
+  rel="mask-icon"
+  href="/assets/icons/safari-pinned-tab.svg"
+  color="#16355f"
+/>
+<link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-config" content="/assets/icons/browserconfig.xml" />
+<meta name="theme-color" content="#16355f" />
+<meta property="og:url" content="https://sergey.cool/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://sergey.cool/assets/img/og.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://sergey.cool/assets/img/og.jpg" />
+<meta name="description" content="The little static site generator" />
+<meta property="og:description" content="The little static site generator" />
+<meta name="twitter:description" content="The little static site generator" />
+<meta name="apple-mobile-web-app-title" content="Markdown | Sergey | the little static site generator" />
+<meta name="application-name" content="Markdown | Sergey | the little static site generator" />
+<meta property="og:title" content="Markdown | Sergey | the little static site generator" />
+<meta property="og:image:alt" content="Markdown | Sergey | the little static site generator" />
+<meta name="twitter:title" content="Markdown | Sergey | the little static site generator" />
+<title>Markdown | Sergey | the little static site generator</title>
+
+</head>
+
+<body>
+  <header role="banner" class="insulate">
+  <div class="wrapper content">
+    <a href="/">
+      <img src="/assets/img/logo.svg" alt="Sergey Logo" class="logo" />
+    </a>
+    <nav class="center">
+      <a href="/#quick-start">Quick start</a>
+      <a href="/#get-started">Walkthrough</a>
+      <a href="/slots/">Slots</a>
+      <a href="/links/">Links</a>
+      <a href="/markdown/" class="active" aria-current="page">Markdown</a>
+      <a href="/options/">Options</a>
+      <a href="https://github.com/trys/sergey">GitHub</a>
+    </nav>
+    <p>Knowledge of markdown is often a requirement for static site generators, but Sergey treats markdown as an opt-in feature. So if you'd like to format some or all of your content in markdown, here's how to do it:</p>
+  </div>
+</header>
+
+
+  <main class="insulate">
+    <div class="wrapper content">
+      <h4 id="create-a-markdown-file">Create a markdown file</h4>
+<p>Write away to your hearts content, and save it in your <code>_imports</code> folder as something like <code>about.md</code></p>
+<h4 id="import-the-markdown-into-your-html-page">Import the markdown into your HTML page</h4>
+<p>Sergey re-uses the <code>&lt;sergey-import&gt;</code> tag with an <code>as=&quot;markdown&quot;</code> attribute to denote the markdown format:</p>
+<pre><code class="language-html">&lt;sergey-import src=&quot;about&quot; as=&quot;markdown&quot; /&gt;</code></pre>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="wrapper">
+  <small>Made by <a href="https://trysmudford.com">Trys Mudford</a></small>
+  <a
+    href="https://app.netlify.com/start/deploy?repository=https://github.com/trys/sergey-netlify"
+    class="deploy"
+    target="_blank"
+  >
+    <img
+      src="https://www.netlify.com/img/deploy/button.svg"
+      alt="Deploy to Netlify"
+    />
+  </a>
+</footer>
+
+</body>
+</html>

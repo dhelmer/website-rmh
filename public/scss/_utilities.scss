@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Gothic&display=swap');
+
+.flex {
+  display: flex;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+
+
+.layout {
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+
+    .header {
+      // flex: 0 1 auto;
+      flex: 0 0 227px;
+    }
+
+    .content {
+      flex: 1 1 auto;
+    }
+
+    .footer {
+      flex: 0 1 40px;
+    }
+}
+
+.row {
+  padding: 0 25px;
+}
+
+.container {
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.caption {
+  font-size: .8rem;
+  text-align: center;
+  display: block;
+}
+
+.img-150-fleft {
+  float: left;
+  width: 150px;
+  margin:  10px 10px 10px 0;
+}
+
+.img-150-fright {
+  float: right;
+  width: 150px;
+  margin: 10px 0 10px 10px;
+}
+
+.title {
+  font-style: italic;
+}

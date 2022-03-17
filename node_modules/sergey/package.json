@@ -1,0 +1,35 @@
+{
+  "name": "sergey",
+  "version": "0.0.13",
+  "description": "The little static site generator",
+  "main": "index.js",
+  "bin": {
+    "sergey": "./index.js"
+  },
+  "scripts": {
+    "start": "node index.js --root=./example/",
+    "dev": "node index.js --watch --root=./example/",
+    "test": "jest --root=./example/"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/trys/sergey.git"
+  },
+  "keywords": [],
+  "author": "Trys Mudford (https://www.trysmudford.com)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/trys/sergey/issues"
+  },
+  "homepage": "https://github.com/trys/sergey#readme",
+  "dependencies": {
+    "chokidar": "^2.1.5",
+    "connect": "^3.6.6",
+    "dotenv": "^7.0.0",
+    "marked": "^0.6.2",
+    "serve-static": "^1.13.2"
+  },
+  "devDependencies": {
+    "jest": "^24.7.1"
+  }
+}

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/icons/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/icons/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/icons/favicon-16x16.png"
+/>
+<link rel="manifest" href="/assets/icons/manifest.json" />
+<link
+  rel="mask-icon"
+  href="/assets/icons/safari-pinned-tab.svg"
+  color="#16355f"
+/>
+<link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-config" content="/assets/icons/browserconfig.xml" />
+<meta name="theme-color" content="#16355f" />
+<meta property="og:url" content="https://sergey.cool/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://sergey.cool/assets/img/og.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://sergey.cool/assets/img/og.jpg" />
+<meta name="description" content="The little static site generator" />
+<meta property="og:description" content="The little static site generator" />
+<meta name="twitter:description" content="The little static site generator" />
+<meta name="apple-mobile-web-app-title" content="Options | Sergey | the little static site generator" />
+<meta name="application-name" content="Options | Sergey | the little static site generator" />
+<meta property="og:title" content="Options | Sergey | the little static site generator" />
+<meta property="og:image:alt" content="Options | Sergey | the little static site generator" />
+<meta name="twitter:title" content="Options | Sergey | the little static site generator" />
+<title>Options | Sergey | the little static site generator</title>
+
+</head>
+
+<body>
+  <header role="banner" class="insulate">
+  <div class="wrapper content">
+    <a href="/">
+      <img src="/assets/img/logo.svg" alt="Sergey Logo" class="logo" />
+    </a>
+    <nav class="center">
+      <a href="/#quick-start">Quick start</a>
+      <a href="/#get-started">Walkthrough</a>
+      <a href="/slots/">Slots</a>
+      <a href="/links/">Links</a>
+      <a href="/markdown/">Markdown</a>
+      <a href="/options/" class="active" aria-current="page">Options</a>
+      <a href="https://github.com/trys/sergey">GitHub</a>
+    </nav>
+    
+  </div>
+</header>
+
+
+  <main class="insulate">
+    <div class="wrapper content">
+      <h2 id="options">Options</h2>
+<p>These options can be passed into the default <code>sergey</code> command or as entries in your <code>.env</code> file.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--watch</code></p>
+<p>This runs Sergey in dev mode, and opens up a server at <code>http://localhost:8080</code>. Any changes you make to local files will trigger a recompile and be ready for you on page refresh.</p>
+<p>Top tip: set the <strong>start</strong> command to run <code>sergey</code>, and <strong>dev</strong> to run <code>sergey --watch</code>. Then you can run <code>npm start</code> and <code>npm run dev</code> respectively.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--root=</code><br><strong>Env:</strong> <code>SERGEY_ROOT</code></p>
+<p>By default, Sergey runs in the same directory as your <code>package.json</code> file. You can override that with this command. Be sure to start it with a dot, and end it with a slash.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--output=</code><br><strong>Env:</strong> <code>SERGEY_OUTPUT</code></p>
+<p>A <code>public</code> folder will be created to hold all the built files, unless you specify otherwise with this option.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--imports=</code><br><strong>Env:</strong> <code>SERGEY_IMPORTS</code></p>
+<p>Sergey uses an <code>_imports</code> folder by default, but this argument lets you change that.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--content=</code><br><strong>Env:</strong> <code>SERGEY_CONTENT</code></p>
+<p>Markdown files should be stored in a <code>_imports</code> folder, but you can override that.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--exclude=</code><br><strong>Env:</strong> <code>SERGEY_EXCLUDE</code></p>
+<p>When in dev mode, Sergey watches for file changes, but ignores common folders like <code>node_modules</code>. It also ignores everything in your <code>.gitignore</code> file. You can add to that list with this argument, in a comma-separated format.</p>
+<hr>
+<p><strong>Arg:</strong> <code>--port=</code><br><strong>Env:</strong> <code>SERGEY_PORT</code></p>
+<p>Override the default port of 8080 with this option.</p>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="wrapper">
+  <small>Made by <a href="https://trysmudford.com">Trys Mudford</a></small>
+  <a
+    href="https://app.netlify.com/start/deploy?repository=https://github.com/trys/sergey-netlify"
+    class="deploy"
+    target="_blank"
+  >
+    <img
+      src="https://www.netlify.com/img/deploy/button.svg"
+      alt="Deploy to Netlify"
+    />
+  </a>
+</footer>
+
+</body>
+
+</html>

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<link rel="stylesheet" href="/assets/css/style.css" />
+<link
+  rel="apple-touch-icon"
+  sizes="180x180"
+  href="/assets/icons/apple-touch-icon.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="32x32"
+  href="/assets/icons/favicon-32x32.png"
+/>
+<link
+  rel="icon"
+  type="image/png"
+  sizes="16x16"
+  href="/assets/icons/favicon-16x16.png"
+/>
+<link rel="manifest" href="/assets/icons/manifest.json" />
+<link
+  rel="mask-icon"
+  href="/assets/icons/safari-pinned-tab.svg"
+  color="#16355f"
+/>
+<link rel="shortcut icon" href="/assets/icons/favicon.ico" />
+<meta name="msapplication-TileColor" content="#ffffff" />
+<meta name="msapplication-config" content="/assets/icons/browserconfig.xml" />
+<meta name="theme-color" content="#16355f" />
+<meta property="og:url" content="https://sergey.cool/" />
+<meta property="og:type" content="website" />
+<meta property="og:image" content="https://sergey.cool/assets/img/og.jpg" />
+<meta name="twitter:card" content="summary" />
+<meta name="twitter:image" content="https://sergey.cool/assets/img/og.jpg" />
+<meta name="description" content="The little static site generator" />
+<meta property="og:description" content="The little static site generator" />
+<meta name="twitter:description" content="The little static site generator" />
+<meta name="apple-mobile-web-app-title" content="Links | Sergey | the little static site generator" />
+<meta name="application-name" content="Links | Sergey | the little static site generator" />
+<meta property="og:title" content="Links | Sergey | the little static site generator" />
+<meta property="og:image:alt" content="Links | Sergey | the little static site generator" />
+<meta name="twitter:title" content="Links | Sergey | the little static site generator" />
+<title>Links | Sergey | the little static site generator</title>
+
+</head>
+
+<body>
+  <header role="banner" class="insulate">
+  <div class="wrapper content">
+    <a href="/">
+      <img src="/assets/img/logo.svg" alt="Sergey Logo" class="logo" />
+    </a>
+    <nav class="center">
+      <a href="/#quick-start">Quick start</a>
+      <a href="/#get-started">Walkthrough</a>
+      <a href="/slots/">Slots</a>
+      <a href="/links/" class="active" aria-current="page">Links</a>
+      <a href="/markdown/">Markdown</a>
+      <a href="/options/">Options</a>
+      <a href="https://github.com/trys/sergey">GitHub</a>
+    </nav>
+    <p>Links are a practical way to show your users where they are in your navigation. They're completely opt-in, so if you prefer to use classic <abbr title="HyperText Markup Language">HTML</abbr> links, go for it!</p>
+  </div>
+</header>
+
+
+  <main class="insulate">
+    <div class="wrapper content">
+      <h2 id="why-you-might-need-links">Why you might need links</h2>
+<p>Let&#39;s take an example of a navigation template you might use on a site:</p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt;
+  &lt;a href=&quot;/contact/&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+<p>If this template is saved as <code>_imports/navigation.html</code>, you can reuse the navigation on any page like so:</p>
+<pre><code class="language-html">&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;Our lil&#39; website&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;header&gt;
+    &lt;sergey-import src=&quot;navigation&quot; /&gt;
+  &lt;/header&gt;
+  &lt;main&gt;
+    &lt;h1&gt;Welcome!&lt;/h1&gt;
+    &lt;p&gt;Our page content.&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/body&gt;
+&lt;/html&gt;</code></pre>
+<p>So far, so good! However, on each page, we&#39;d like this template to render a little differently. For example, on the homepage the navigation would render like so:</p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href=&quot;/&quot; class=&quot;active&quot; aria-current=&quot;page&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;/about/&quot;&gt;About&lt;/a&gt;
+  &lt;a href=&quot;/contact/&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+<p>Whereas on the about page, it should render like this:</p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;a href=&quot;/&quot;&gt;Home&lt;/a&gt;
+  &lt;a href=&quot;/about/&quot; class=&quot;active&quot; aria-current=&quot;page&quot;&gt;About&lt;/a&gt;
+  &lt;a href=&quot;/contact/&quot;&gt;Contact&lt;/a&gt;
+&lt;/nav&gt;</code></pre>
+<p>That&#39;s where <code>&lt;sergey-link&gt;</code> comes in!</p>
+<h4 id="change-navigation-links-to-sergey-link">Change navigation links to <code>&lt;sergey-link&gt;</code></h4>
+<p>In the sample above, we can change our navigation template (<code>_imports/navigation.html</code>) to the following:</p>
+<pre><code class="language-html">&lt;nav&gt;
+  &lt;sergey-link to=&quot;/&quot;&gt;Home&lt;/sergey-link&gt;
+  &lt;sergey-link to=&quot;/about/&quot;&gt;About&lt;/sergey-link&gt;
+  &lt;sergey-link to=&quot;/contact/&quot;&gt;Contact&lt;/sergey-link&gt;
+&lt;/nav&gt;</code></pre>
+<p>Now when Sergey builds our site, it will add <code>class=&quot;active&quot;</code> and <code>aria-current=&quot;page&quot;</code> as appropriate on each page!</p>
+    </div>
+  </main>
+
+  <footer role="contentinfo" class="wrapper">
+  <small>Made by <a href="https://trysmudford.com">Trys Mudford</a></small>
+  <a
+    href="https://app.netlify.com/start/deploy?repository=https://github.com/trys/sergey-netlify"
+    class="deploy"
+    target="_blank"
+  >
+    <img
+      src="https://www.netlify.com/img/deploy/button.svg"
+      alt="Deploy to Netlify"
+    />
+  </a>
+</footer>
+
+</body>
+</html>

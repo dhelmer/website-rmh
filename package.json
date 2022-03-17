@@ -1,0 +1,24 @@
+{
+  "name": "2022-03-17-static",
+  "version": "1.0.0",
+  "description": "This is the repo for Ronald Munro Helmer's *WorldlyGuy.com* website.",
+  "main": "index.js",
+  "scripts": {
+    "start": "sergey",
+    "dev": "sergey --watch"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dhelmer/website-rmh.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dhelmer/website-rmh/issues"
+  },
+  "homepage": "https://github.com/dhelmer/website-rmh#readme",
+  "dependencies": {
+    "sergey": "^0.0.13"
+  }
+}
