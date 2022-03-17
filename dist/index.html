@@ -7,7 +7,7 @@
     <title>New Site</title>
     <link rel="stylesheet" href="css/main.min.css">
   </head>
-  <body>
+  <body onload="copyright()">
     <div class="layout">
       <div class="row header">
         <div class="container">
@@ -39,7 +39,7 @@
           
           <h2>Ronald Munro Helmer</h2>
           <div class="img-150-fright"><img src="media/rmh-portrait.jpg" style="border:1px solid #000000"><br><span class="caption">Ronald Munro Helmer<br>b. 1924 – d. 2005</span></div>
-          <p>A lifelong Calgarian, Ron grew up in the southwest community of Scarboro. He attended Sunalta Elementary, Central High School, and the University of Alberta where he was the first Engineering student to hold the office of Students' Union President. After graduating with a chemical engineering degree in 1946, Ron worked briefly for Bird Archer Co., but soon realized he liked to run his own show. Ron then founded Helmer Chemical Company, which later became Tam O'Shanter Industries, Ltd.</p>
+          <p>A lifelong Calgarian, Ron grew up in the southwest community of Scarboro. He attended Sunalta Elementary, Central High School, and the University of Alberta where he was the first Engineering student to hold the office of Students' Union President. After graduating with a chemical engineering degree in 1946, Ron worked briefly for Bird Archer Co., but soon realized he liked to run his own show. Ron then founded <span class="title">Helmer Chemical Company</span>, which later became <span class="title">Tam O'Shanter Industries, Ltd.</span></p>
 
           <p>Ron's early success in the oilfield chemical business allowed him to pursue his two great loves: traveling and writing. Over his lifetime, Ron traveled extensively throughout every continent on the globe and wrote detailed, humorous accounts of his journeys and adventures. Of all his traveling adventures, he is probably best known for his 1954, 36-day crossing of the Pacific from Honolulu to Victoria in a 27-foot sloop with New Zealander, Deny Ryan.</p>
 
@@ -49,8 +49,9 @@
         </div>
       </div>
       <div class="row footer">
-        <p>This is the footer.</p>
+        <p id="copyright">&copy; Copyright 2021 Munro Publishing. All Rights Reserved.</p>
       </div>
     </div> <!--.layout -->
+    <script src="js/scripts.js"></script>
   </body>
 </html>

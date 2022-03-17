@@ -61,6 +61,7 @@ nav {
 
 .content {
   background-color: #f0f0f0;
+  padding: 50px 25px;
 
   ul {
     list-style-type: disc;
@@ -72,4 +73,10 @@ nav {
 .footer {
   background-color: $primary-color;
   color: #fff;
+  height: 150px;
+
+  p#copyright {
+    margin: 20px auto;
+    text-align: center;
+  }
 }
