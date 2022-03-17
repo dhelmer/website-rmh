@@ -21,9 +21,9 @@ a:hover {
 }
 
 body {
-  font-family: Georgia, Times, "Times New Roman", serif;
+  font-family: "Segoe UI", Georgia, Times, "Times New Roman", serif;
   color: #333;
-  font-weight: 300;
+  font-weight: 400;
 }
 
 h1, h2 {
@@ -98,7 +98,13 @@ body {
 .img-150-fleft {
   float: left;
   width: 150px;
-  margin: 10px 10px 0;
+  margin: 10px 10px 10px 0;
+}
+
+.img-150-fright {
+  float: right;
+  width: 150px;
+  margin: 10px 0 10px 10px;
 }
 
 .title {
