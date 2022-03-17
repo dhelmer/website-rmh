@@ -113,7 +113,7 @@ body {
 
 .header {
   background-color: #292929;
-  background-image: url("../media/rmh-header-1024-bk.jpg");
+  background-image: url("/media/rmh-header-1024-bk.jpg");
   background-size: cover;
   color: #fff;
 }

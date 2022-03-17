@@ -2,17 +2,9 @@
 @import "variables";
 @import "utilities.scss";
 
-
-
-// .container {
-//   width: 90vw;
-//   margin: 0 auto;
-//   overflow: hidden;
-// }
-
 .header {
   background-color: #292929;
-  background-image: url("../media/rmh-header-1024-bk.jpg");
+  background-image: url("/media/rmh-header-1024-bk.jpg");
   background-size: cover;
   color: #fff;
 
