@@ -105,6 +105,8 @@ body {
   float: right;
   width: 150px;
   margin: 10px 0 10px 10px;
+  -webkit-box-shadow: -5px 5px 10px 1px #cccccc;
+          box-shadow: -5px 5px 10px 1px #cccccc;
 }
 
 .title {
