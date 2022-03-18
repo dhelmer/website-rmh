@@ -111,6 +111,10 @@ body {
   font-style: italic;
 }
 
+.bdr-1 {
+  border: 1px solid #000000;
+}
+
 .header {
   background-color: #292929;
   background-image: url("/assets/media/rmh-header-1024-bk.jpg");
@@ -163,11 +167,11 @@ nav a {
   text-decoration: none;
 }
 
-nav a.current {
+nav a:hover {
   border-bottom: 2px solid #fff;
 }
 
-nav a:hover {
+nav [aria-current] {
   border-bottom: 2px solid #fff;
 }
 
