@@ -202,6 +202,23 @@ nav [aria-current] {
   margin-left: 35px;
 }
 
+.content .missive {
+  font-family: 'Courier New', Courier, monospace;
+  background: url("/assets/media/bg-lt-blue-paper.jpg");
+  margin: 20px 30px;
+  padding: 30px 40px;
+  -webkit-box-shadow: 0px 0px 9px 4px #ccc;
+          box-shadow: 0px 0px 9px 4px #ccc;
+  border: 16px solid transparent;
+  -o-border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+     border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+}
+
+.content .end {
+  font-style: italic;
+  text-align: center;
+}
+
 .footer {
   background-color: #353535;
   color: #fff;

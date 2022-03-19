@@ -29,10 +29,10 @@
         <div class="container">
           <h2 class="storyTitle"><sergey-slot name="title" /></h2>
           <p class="byline">
-            By: <a href='<sergey-slot name="authorURL" />'><sergey-slot name="author" /></a>
+            <sergey-slot name="by" /> <a href='<sergey-slot name="authorURL" />'><sergey-slot name="author" /></a>
           </p>
           <sergey-slot />
-          
+          <p class="end">&mdash; The End &mdash;</p>
         </div>
       </div>
       <div class="row footer">
