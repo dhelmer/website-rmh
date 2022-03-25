@@ -187,6 +187,18 @@ nav [aria-current] {
   font-size: 1.05rem;
 }
 
+.content .card {
+  background-color: #e5e4e4;
+  border-radius: 10px;
+  margin: 19px 0;
+  padding: 5px 10px;
+  border: 1px solid #999;
+}
+
+.content .card h3.storyTitle {
+  margin-bottom: 5px;
+}
+
 .content h2.storyTitle {
   margin-bottom: 0;
 }
