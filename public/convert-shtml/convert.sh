@@ -81,6 +81,9 @@ EOF
 	# Remove the friggin' Microsoft carriage returns from the document.
 	sed -i 's/\r$//' html/${inputfile}.html
 
+	# Remove the non-breaking space pararagraph spacers
+	sed -i 's/<P>&nbsp;<\/P>//g' html/${inputfile}.html
+
 	# Remove the temp files and original input file.
 	rm header content footer title tmp.txt 
 
