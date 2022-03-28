@@ -180,11 +180,29 @@ nav [aria-current] {
 .content {
   background-color: #f0f0f0;
   padding: 50px 25px;
+  /* Forms */
+  /* Clear floats after the columns */
+  /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
+  /* end forms */
 }
 
 .content .container {
   max-width: 850px;
   font-size: 1.05rem;
+}
+
+.content .bookjacket {
+  width: 160px;
+  float: left;
+  margin: 10px 10px 5px 0;
+  padding: 10px;
+  text-align: center;
+  background-color: #ddd;
+}
+
+.content .video {
+  width: 550px;
+  margin: 0 auto;
 }
 
 .content .card {
@@ -224,6 +242,64 @@ nav [aria-current] {
   border: 16px solid transparent;
   -o-border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
      border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
+}
+
+.content input[type=text], .content select, .content textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+}
+
+.content label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+.content input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+.content input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+.content .contactForm {
+  border-radius: 5px;
+  background-color: #f2f2f2;
+  padding: 20px;
+}
+
+.content .contactForm .col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.content .contactForm .col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+.content .row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+@media screen and (max-width: 600px) {
+  .content .col-25, .content .col-75, .content input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
 }
 
 .content .end {
