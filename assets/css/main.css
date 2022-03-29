@@ -200,8 +200,11 @@ nav [aria-current] {
 }
 
 .content .video {
-  width: 90%;
-  margin: 0 auto;
+  margin: 20px auto;
+  background-color: #c8c2c2;
+  padding: 30px 10px;
+  border-radius: 10px;
+  text-align: center;
 }
 
 .content .card {
