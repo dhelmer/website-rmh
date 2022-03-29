@@ -181,7 +181,6 @@ nav [aria-current] {
   background-color: #f0f0f0;
   padding: 50px 25px;
   /* Forms */
-  /* Clear floats after the columns */
   /* Responsive layout - when the screen is less than 600px wide, make the two columns stack on top of each other instead of next to each other */
   /* end forms */
 }
@@ -275,6 +274,7 @@ nav [aria-current] {
   border-radius: 5px;
   background-color: #f2f2f2;
   padding: 20px;
+  /* Clear floats after the columns */
 }
 
 .content .contactForm .col-25 {
@@ -289,7 +289,7 @@ nav [aria-current] {
   margin-top: 6px;
 }
 
-.content .row:after {
+.content .contactForm .row:after {
   content: "";
   display: table;
   clear: both;
