@@ -246,7 +246,10 @@ nav [aria-current] {
      border-image: 16 repeating-linear-gradient(-45deg, red 0, red 1em, transparent 0, transparent 2em, #58a 0, #58a 3em, transparent 0, transparent 4em);
 }
 
-.content input[type=text], .content select, .content textarea {
+.content input[type=text],
+.content input[type=email],
+.content select,
+.content textarea {
   width: 100%;
   padding: 12px;
   border: 1px solid #ccc;
